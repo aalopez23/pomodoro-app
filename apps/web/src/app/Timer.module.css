@@ -1,0 +1,63 @@
+.wrapper {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+/* top badges row */
+.badges {
+  display: flex;
+  gap: 8px;
+}
+
+/* time readout */
+.time {
+  font-size: 48px;
+  margin: 8px 0;
+}
+
+/* buttons row */
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+/* quick switches */
+.quick {
+  display: flex;
+  gap: 6px;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+/* --- buttons --- */
+.btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  cursor: pointer;
+  background: #1a1a1a;
+  color: white;
+  transition: background 0.2s ease, transform 0.05s ease;
+}
+.btn:active { transform: translateY(1px); }
+
+.secondary { background: #2a2a2a; }
+.accent    { background: #0b5;     }
+.ghost     { background: transparent; color: #bbb; }
+
+/* disabled */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --- THEMES by phase (buttons change color) --- */
+.workTheme .accent    { background: #0b5; }  /* Work = red */
+.workTheme .accent:hover { background: #0b2; }
+
+.shortTheme .accent   { background: #2a9d8f; }  /* Short = green */
+.shortTheme .accent:hover { background: #21867b; }
+
+.longTheme .accent    { background: #457b9d; }  /* Long = blue */
+.longTheme .accent:hover { background: #366383; }
