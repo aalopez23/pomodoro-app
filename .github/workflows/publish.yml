@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - master
-
+      
+defaults:
+  run:
+    working-directory: apps/webs
+    
 permissions:
   contents: read
   pages: write
