@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@pomodoro/utils'],
+  output = "export",
+  ReactStrictMode: true,
+  //transpilePackages: ['@pomodoro/utils'],
 };
 module.exports = nextConfig;
