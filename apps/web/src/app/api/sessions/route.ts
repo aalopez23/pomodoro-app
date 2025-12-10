@@ -1,3 +1,4 @@
+export const dynamic = "error";
 import { NextResponse } from "next/server";
 import { addSession, listSessions } from "@/server/sessionStore";
 // GET /api/sessions -> returns a stub list for now
